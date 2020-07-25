@@ -15,6 +15,23 @@ html {
     height: 100%;    
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;    
+}
+
 body {
     width:100%;
     height:100%;
@@ -270,3 +287,27 @@ footer p {
     font-size: 1.2rem;
     padding: 30px 0;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  #projects {
+    height: 2000px;
+    text-align: center;
+  }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 50px;
+  }
